@@ -1,0 +1,233 @@
+import {StyleSheet} from 'react-native';
+import {COLORS} from '../../../constants/COLORS';
+import {Fonts} from '../../../interface/fonts.enum';
+
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: COLORS.background,
+  },
+  scrollContainer: {
+    flex: 1,
+    backgroundColor: COLORS.lightBackground,
+    padding: 16,
+    margin: 16,
+    borderRadius: 16,
+  },
+  section: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  sectionTitle: {
+    fontSize: 16,
+    fontFamily: Fonts.Regular,
+    color: '#092256',
+  },
+  dateTimeContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingVertical: 8,
+    paddingHorizontal: 12,
+    borderRadius: 8,
+    gap: 8,
+    backgroundColor: COLORS.purple,
+  },
+  dateTimeText: {
+    fontSize: 14,
+    fontFamily: Fonts.Book,
+    color: '#6B46C1',
+  },
+  mapContainer: {
+    marginTop: 16,
+    marginBottom: 8,
+    borderRadius: 12,
+    overflow: 'hidden',
+  },
+  mapPlaceholder: {
+    width: '100%',
+    height: 120,
+    justifyContent: 'center',
+    alignItems: 'center',
+    position: 'relative',
+  },
+  mapText: {
+    fontSize: 16,
+    fontFamily: Fonts.Medium,
+    color: '#6b7280',
+    marginBottom: 12,
+  },
+  routeButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    backgroundColor: '#0F5FBD',
+    padding: 8,
+    borderRadius: 16,
+  },
+  routeButtonText: {
+    color: 'white',
+    fontSize: 12,
+    fontFamily: Fonts.Medium,
+  },
+  routeDetails: {
+    marginTop: 20,
+    borderRadius: 12,
+  },
+  routeStep: {
+    flexDirection: 'row',
+    marginBottom: 16,
+    justifyContent: 'space-between',
+  },
+  routeStepIndicator: {
+    alignItems: 'center',
+    flexDirection: 'row',
+    gap: 4,
+  },
+  routeStepDot: {
+    width: 12,
+    height: 12,
+    borderRadius: 12,
+    marginRight: 12,
+  },
+  hollowDot: {
+    width: 12,
+    height: 12,
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: 'black',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginRight: 12,
+  },
+  routeStepNumber: {
+    fontSize: 10,
+    width: 40,
+    textAlign: 'center',
+    fontFamily: Fonts.Bold,
+    color: '#6b7280',
+  },
+  routeStepContent: {
+    justifyContent: 'center',
+  },
+  routeStepDuration: {
+    fontSize: 12,
+    fontFamily: Fonts.Medium,
+    color: '#6b7280',
+    marginBottom: 2,
+  },
+  routeStepLocation: {
+    fontSize: 14,
+    fontFamily: Fonts.Medium,
+    color: '#092256',
+  },
+  driverSection: {
+    borderRadius: 12,
+    paddingVertical: 16,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  driverInfo: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    flex: 1,
+  },
+  driverAvatar: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: '#6B46C1',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: 12,
+  },
+  driverAvatarText: {
+    color: 'white',
+    fontSize: 14,
+    fontFamily: Fonts.Bold,
+  },
+  driverDetails: {
+    flex: 1,
+  },
+  driverName: {
+    fontSize: 14,
+    fontFamily: Fonts.Bold,
+    color: '#092256',
+    marginBottom: 5,
+  },
+  driverPhone: {
+    fontSize: 12,
+    fontFamily: Fonts.Book,
+    color: '#6b7280',
+  },
+  earningsContainer: {},
+  earningsLabel: {
+    fontSize: 11,
+    fontFamily: Fonts.Light,
+    color: '#6b7280',
+    marginBottom: 2,
+  },
+  earningsAmount: {
+    fontSize: 14,
+    fontFamily: Fonts.Bold,
+    color: '#092256',
+  },
+  companySection: {
+    borderRadius: 12,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  companyName: {
+    fontSize: 14,
+    fontFamily: Fonts.Regular,
+    color: '#092256',
+    flex: 1,
+  },
+  requirementsWrapper: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
+  },
+  requirementContainer: {
+    marginBottom: 12,
+    width: '48%',
+  },
+  requirementLabel: {
+    fontSize: 12,
+    fontFamily: Fonts.Regular,
+    color: '#6b7280',
+    marginBottom: 10,
+  },
+  requirementValue: {
+    fontSize: 13,
+    fontFamily: Fonts.Bold,
+    color: '#092256',
+  },
+  statusContainer: {
+    backgroundColor: '#DAF5EC',
+    marginVertical: 8,
+    borderRadius: 12,
+    padding: 16,
+    alignItems: 'center',
+  },
+  statusText: {
+    fontSize: 14,
+    fontFamily: Fonts.Bold,
+    color: '#1FCB91',
+  },
+  divider: {
+    height: 1,
+    backgroundColor: '#F1F1F1',
+    marginVertical: 16,
+  },
+  earningsIconContainer: {
+    width: 40,
+    height: 40,
+    backgroundColor: '#ECF5FF',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 100,
+    marginRight: 12,
+  },
+});

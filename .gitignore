@@ -72,3 +72,13 @@ yarn-error.log
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# environment variables
+.env
+
+# jso folder
+.jso
+src/screens/auth/LoginScreen/index.tsx
+src/screens/auth/LoginScreen/styles.ts
+src/screens/auth/RegisterScreen/index.tsx
+src/screens/auth/RegisterScreen/styles.ts
