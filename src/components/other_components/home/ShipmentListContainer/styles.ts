@@ -131,6 +131,7 @@ export const styles = StyleSheet.create({
   locationText: {
     fontFamily: Fonts.Regular,
     color: '#092256',
+    width: '80%',
   },
   stopContainer: {
     flexDirection: 'row',

@@ -15,6 +15,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		17171DD69F0A4F24B6CBFFD3 /* Axiforma-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5528596AF0FA4B9E9FC67E00 /* Axiforma-SemiBold.ttf */; };
 		30AECFD2D28B498EA13D43CF /* Axiforma-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DE1CA6AB7AA4C7BAF90B061 /* Axiforma-ExtraBold.ttf */; };
+		6AB222312E03E6950056CE9F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AB222302E03E6950056CE9F /* Launch Screen.storyboard */; };
 		7699B88040F8A987B510C191 /* libPods-kamiontestcase-kamiontestcaseTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-kamiontestcase-kamiontestcaseTests.a */; };
 		A74F6AD3628645818EE86352 /* Axiforma-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E1D63FBC2E6497CA5518892 /* Axiforma-Medium.ttf */; };
 		AC0667C3CA474DEEAD8BE16A /* Axiforma-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EBDFC1CB37B4A69B69C4B1B /* Axiforma-Black.ttf */; };
@@ -47,23 +48,24 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = kamiontestcase/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = kamiontestcase/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = kamiontestcase/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		18AE44C5DDA1441C926780AF /* Axiforma-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Axiforma-Regular.ttf"; path = "../assets/fonts/Axiforma-Regular.ttf"; sourceTree = "<group>"; };
+		18AE44C5DDA1441C926780AF /* Axiforma-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Axiforma-Regular.ttf"; path = "../assets/fonts/Axiforma-Regular.ttf"; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-kamiontestcase-kamiontestcaseTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kamiontestcase-kamiontestcaseTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A862C7051114D38A02A3875 /* Axiforma-Heavy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Axiforma-Heavy.ttf"; path = "../assets/fonts/Axiforma-Heavy.ttf"; sourceTree = "<group>"; };
-		2336903C566947E1A7F9683B /* Axiforma-Book.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Axiforma-Book.ttf"; path = "../assets/fonts/Axiforma-Book.ttf"; sourceTree = "<group>"; };
+		1A862C7051114D38A02A3875 /* Axiforma-Heavy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Axiforma-Heavy.ttf"; path = "../assets/fonts/Axiforma-Heavy.ttf"; sourceTree = "<group>"; };
+		2336903C566947E1A7F9683B /* Axiforma-Book.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Axiforma-Book.ttf"; path = "../assets/fonts/Axiforma-Book.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-kamiontestcase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kamiontestcase.debug.xcconfig"; path = "Target Support Files/Pods-kamiontestcase/Pods-kamiontestcase.debug.xcconfig"; sourceTree = "<group>"; };
-		3DE1CA6AB7AA4C7BAF90B061 /* Axiforma-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Axiforma-ExtraBold.ttf"; path = "../assets/fonts/Axiforma-ExtraBold.ttf"; sourceTree = "<group>"; };
-		5528596AF0FA4B9E9FC67E00 /* Axiforma-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Axiforma-SemiBold.ttf"; path = "../assets/fonts/Axiforma-SemiBold.ttf"; sourceTree = "<group>"; };
+		3DE1CA6AB7AA4C7BAF90B061 /* Axiforma-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Axiforma-ExtraBold.ttf"; path = "../assets/fonts/Axiforma-ExtraBold.ttf"; sourceTree = "<group>"; };
+		5528596AF0FA4B9E9FC67E00 /* Axiforma-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Axiforma-SemiBold.ttf"; path = "../assets/fonts/Axiforma-SemiBold.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-kamiontestcase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kamiontestcase.release.xcconfig"; path = "Target Support Files/Pods-kamiontestcase/Pods-kamiontestcase.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-kamiontestcase-kamiontestcaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kamiontestcase-kamiontestcaseTests.debug.xcconfig"; path = "Target Support Files/Pods-kamiontestcase-kamiontestcaseTests/Pods-kamiontestcase-kamiontestcaseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-kamiontestcase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kamiontestcase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7014082EEB5646FBBED2014D /* Axiforma-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Axiforma-Light.ttf"; path = "../assets/fonts/Axiforma-Light.ttf"; sourceTree = "<group>"; };
-		7E1D63FBC2E6497CA5518892 /* Axiforma-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Axiforma-Medium.ttf"; path = "../assets/fonts/Axiforma-Medium.ttf"; sourceTree = "<group>"; };
-		7EBDFC1CB37B4A69B69C4B1B /* Axiforma-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Axiforma-Black.ttf"; path = "../assets/fonts/Axiforma-Black.ttf"; sourceTree = "<group>"; };
+		6AB222302E03E6950056CE9F /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		7014082EEB5646FBBED2014D /* Axiforma-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Axiforma-Light.ttf"; path = "../assets/fonts/Axiforma-Light.ttf"; sourceTree = "<group>"; };
+		7E1D63FBC2E6497CA5518892 /* Axiforma-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Axiforma-Medium.ttf"; path = "../assets/fonts/Axiforma-Medium.ttf"; sourceTree = "<group>"; };
+		7EBDFC1CB37B4A69B69C4B1B /* Axiforma-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Axiforma-Black.ttf"; path = "../assets/fonts/Axiforma-Black.ttf"; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-kamiontestcase-kamiontestcaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kamiontestcase-kamiontestcaseTests.release.xcconfig"; path = "Target Support Files/Pods-kamiontestcase-kamiontestcaseTests/Pods-kamiontestcase-kamiontestcaseTests.release.xcconfig"; sourceTree = "<group>"; };
-		94A88890097E4CAAB6C36A5C /* Axiforma-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Axiforma-Bold.ttf"; path = "../assets/fonts/Axiforma-Bold.ttf"; sourceTree = "<group>"; };
+		94A88890097E4CAAB6C36A5C /* Axiforma-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Axiforma-Bold.ttf"; path = "../assets/fonts/Axiforma-Bold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F9B676FB40384A33AF591A4F /* Axiforma-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Axiforma-Thin.ttf"; path = "../assets/fonts/Axiforma-Thin.ttf"; sourceTree = "<group>"; };
+		F9B676FB40384A33AF591A4F /* Axiforma-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Axiforma-Thin.ttf"; path = "../assets/fonts/Axiforma-Thin.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		13B07FAE1A68108700A75B9A /* kamiontestcase */ = {
 			isa = PBXGroup;
 			children = (
+				6AB222302E03E6950056CE9F /* Launch Screen.storyboard */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -141,7 +144,6 @@
 				F9B676FB40384A33AF591A4F /* Axiforma-Thin.ttf */,
 			);
 			name = Resources;
-			path = "";
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -284,6 +286,7 @@
 				0CB7737A4E7736C43A307C2C /* PrivacyInfo.xcprivacy in Resources */,
 				AC0667C3CA474DEEAD8BE16A /* Axiforma-Black.ttf in Resources */,
 				AFC3D69F792548DD92270CFB /* Axiforma-Bold.ttf in Resources */,
+				6AB222312E03E6950056CE9F /* Launch Screen.storyboard in Resources */,
 				B50E06F235D34D0AA4BC98F1 /* Axiforma-Book.ttf in Resources */,
 				30AECFD2D28B498EA13D43CF /* Axiforma-ExtraBold.ttf in Resources */,
 				EE01FF65B0AE40419FF7FE63 /* Axiforma-Heavy.ttf in Resources */,

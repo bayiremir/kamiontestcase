@@ -77,12 +77,13 @@ export const styles = StyleSheet.create({
   routeStep: {
     flexDirection: 'row',
     marginBottom: 16,
-    justifyContent: 'space-between',
+    alignItems: 'flex-start',
   },
   routeStepIndicator: {
     alignItems: 'center',
     flexDirection: 'row',
     gap: 4,
+    minWidth: 80,
   },
   routeStepDot: {
     width: 12,
@@ -108,7 +109,9 @@ export const styles = StyleSheet.create({
     color: '#6b7280',
   },
   routeStepContent: {
+    flex: 1,
     justifyContent: 'center',
+    alignItems: 'flex-end',
   },
   routeStepDuration: {
     fontSize: 12,
@@ -120,6 +123,8 @@ export const styles = StyleSheet.create({
     fontSize: 14,
     fontFamily: Fonts.Medium,
     color: '#092256',
+    flexWrap: 'wrap',
+    textAlign: 'right',
   },
   driverSection: {
     borderRadius: 12,
@@ -229,5 +234,8 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     borderRadius: 100,
     marginRight: 12,
+  },
+  contentContainer: {
+    paddingBottom: 100,
   },
 });

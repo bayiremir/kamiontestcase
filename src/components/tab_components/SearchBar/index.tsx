@@ -1,5 +1,5 @@
 import {StyleSheet, TextInput, View, TouchableOpacity} from 'react-native';
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {MagnifyingGlassIcon, XMarkIcon} from 'react-native-heroicons/outline';
 import {COLORS} from '../../../constants/COLORS';
 import {Fonts} from '../../../interface/fonts.enum';
@@ -9,25 +9,36 @@ interface SearchBarProps {
   onSearch?: (text: string) => void;
   value?: string;
   onChangeText?: (text: string) => void;
+  debounceDelay?: number;
 }
 
-const SearchBar: React.FC<SearchBarProps> = ({
+const SearchBar = ({
   placeholder,
   onSearch,
   value: controlledValue,
   onChangeText,
-}) => {
+  debounceDelay = 500,
+}: SearchBarProps) => {
   const [internalValue, setInternalValue] = useState('');
 
   const isControlled = controlledValue !== undefined;
   const inputValue = isControlled ? controlledValue : internalValue;
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      onSearch?.(inputValue);
+    }, debounceDelay);
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [inputValue, debounceDelay, onSearch]);
 
   const handleChangeText = (text: string) => {
     if (!isControlled) {
       setInternalValue(text);
     }
     onChangeText?.(text);
-    onSearch?.(text);
   };
 
   const handleClear = () => {
@@ -59,7 +70,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
       <MagnifyingGlassIcon
         width={25}
         height={20}
-        color={COLORS.text}
+        color={'#092256'}
         style={styles.searchIcon}
       />
     </View>

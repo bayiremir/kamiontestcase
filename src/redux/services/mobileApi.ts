@@ -3,13 +3,15 @@ import {fetchBaseQuery} from '@reduxjs/toolkit/query';
 import {BASEURL} from '@env';
 import {storage} from '../../utils/Storage';
 import {Shipment} from '../../interface/shipments.interface';
-const storedUser = storage.getString('user');
-const token = storedUser ? JSON.parse(storedUser).token : null;
+import {clearUser} from '../slices/userSlice';
 
 const baseQuery = fetchBaseQuery({
   baseUrl: BASEURL,
   prepareHeaders: headers => {
     headers.set('Content-Type', 'application/json');
+    // Token'ı her seferinde dinamik olarak al
+    const storedUser = storage.getString('user');
+    const token = storedUser ? JSON.parse(storedUser).token : null;
     if (token) {
       headers.set('Authorization', `Bearer ${token}`);
     }
@@ -21,7 +23,8 @@ const baseQueryWithCheck = async (args: any, api: any, extraOptions: any) => {
   // Unauthorized kontrolü ve hata işlemleri yapılabilir
   if (result.error?.status === 401) {
     console.error('Unauthorized, logging out...');
-    // Çıkış işlemi veya toast mesaj
+    // Kullanıcıyı otomatik olarak çıkış yap
+    api.dispatch(clearUser());
   }
   return result;
 };

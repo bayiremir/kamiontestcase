@@ -45,6 +45,7 @@ const HomeScreen = () => {
       ) : (
         <FlatList
           data={filteredData}
+          showsVerticalScrollIndicator={false}
           contentContainerStyle={styles.flatListContainer}
           renderItem={({item}) => <ShipmentListContainer item={item} />}
         />

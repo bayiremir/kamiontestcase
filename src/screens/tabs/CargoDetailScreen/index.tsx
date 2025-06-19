@@ -36,7 +36,10 @@ const CargoDetailScreen = () => {
       {isLoading ? (
         <Lottie />
       ) : (
-        <ScrollView style={styles.scrollContainer}>
+        <ScrollView
+          contentContainerStyle={styles.contentContainer}
+          showsVerticalScrollIndicator={false}
+          style={styles.scrollContainer}>
           <RouteSection shipmentData={shipmentData} formatDate={formatDate} />
           <MapSection />
           <RouteDetailsSection shipmentData={shipmentData} />
