@@ -125,6 +125,7 @@ export const styles = StyleSheet.create({
     color: '#092256',
     flexWrap: 'wrap',
     textAlign: 'right',
+    width: '80%',
   },
   driverSection: {
     borderRadius: 12,
