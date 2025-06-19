@@ -37,9 +37,15 @@ const userSlice = createSlice({
       storage.delete('user');
       storage.set('authLogin', 'false');
     },
+    logoutSuccess: state => {
+      state.user = null;
+      state.authLogin = false;
+      storage.delete('user');
+      storage.set('authLogin', 'false');
+    },
   },
 });
 
-export const {setAuthLogin, setUser, loginSuccess, clearUser} =
+export const {setAuthLogin, setUser, loginSuccess, clearUser, logoutSuccess} =
   userSlice.actions;
 export default userSlice.reducer;

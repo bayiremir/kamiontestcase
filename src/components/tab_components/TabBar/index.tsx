@@ -3,7 +3,6 @@ import React from 'react';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {Fonts} from '../../../interface/fonts.enum';
 import {COLORS} from '../../../constants/COLORS';
-
 const TabBar = ({headerText}: {headerText: string}) => {
   const insets = useSafeAreaInsets();
   const statusBarHeight = insets.top;
