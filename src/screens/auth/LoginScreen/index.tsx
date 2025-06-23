@@ -23,7 +23,9 @@ import Toast from 'react-native-toast-message';
 const LoginScreen = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [login, {isLoading}] = useLoginMutation();
+  const [login, {isLoading, data, error}] = useLoginMutation();
+
+  console.log(data, error);
   const dispatch = useDispatch();
 
   const handleLogin = async () => {

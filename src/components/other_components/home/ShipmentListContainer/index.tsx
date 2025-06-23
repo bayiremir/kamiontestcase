@@ -23,13 +23,13 @@ const ShipmentListContainer = ({item}: ShipmentListContainerProps) => {
         navigation.navigate('CargoDetailScreen', {id: item.id.toString()})
       }>
       <View style={styles.headerRow}>
-        <Text style={styles.idText}>{item.id}</Text>
+        <Text style={styles.idText}>{item?.id}</Text>
         <View style={styles.infoContainer}>
-          <Text style={styles.dateText}>{formatDate(item.pick_up_date)}</Text>
+          <Text style={styles.dateText}>{formatDate(item?.pick_up_date)}</Text>
         </View>
         <View style={styles.priceContainer}>
           <Text style={styles.priceText}>
-            {item.price.shipper.freight_price}
+            {item?.price?.shipper?.freight_price}
             <Text style={styles.currencyText}>₺+KDV</Text>
           </Text>
         </View>
@@ -44,8 +44,8 @@ const ShipmentListContainer = ({item}: ShipmentListContainerProps) => {
               <View style={styles.departureContainer}>
                 {renderLocationInfo(
                   'ÇIKIŞ',
-                  item.departure_address.city.name,
-                  item.departure_address.district.name,
+                  item?.departure_address?.city?.name,
+                  item?.departure_address?.district?.name,
                 )}
               </View>
             </View>
@@ -66,8 +66,8 @@ const ShipmentListContainer = ({item}: ShipmentListContainerProps) => {
               <View style={styles.arrivalContainer}>
                 {renderLocationInfo(
                   'VARIŞ',
-                  item.delivery_address.city.name,
-                  item.delivery_address.district.name,
+                  item?.delivery_address?.city?.name,
+                  item?.delivery_address?.district?.name,
                 )}
               </View>
             </View>
